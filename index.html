@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwin Bracho | Desarrollador de Software</title>
+    <meta name="description"
+        content="Portafolio profesional de Darwin Bracho, desarrollador de software enfocado en soluciones web modernas y funcionales.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Darwin Bracho<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="container">
+            <h1 class="reveal">Darwin Bracho</h1>
+            <p class="reveal">Desarrollador de Software & Analista en formación.</p>
+            <p class="reveal" style="font-size: 1.1rem; opacity: 0.8;">Desarrollo soluciones web modernas, funcionales y
+                adaptadas a necesidades reales, enfocándome en rendimiento, claridad y usabilidad.</p>
+            <div class="reveal">
+                <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <h2 class="section-title reveal">Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Perfil Profesional</h3>
+                    <p>Soy Técnico en Programación de Software y actualmente estudiante del Tecnólogo en Análisis y
+                        Desarrollo de Software del SENA, con enfoque en el desarrollo de aplicaciones web funcionales,
+                        orientadas a resolver problemas reales e implementando buenas practicas de desarrollo de
+                        software.</p>
+
+                    <p>Tengo experiencia en la construcción de sistemas web completos, desde la interfaz hasta la lógica
+                        backend y la gestión de bases de datos. Me destaco por crear soluciones prácticas, limpias y
+                        eficientes, con una buena estructura de código y enfoque en el usuario.</p>
+                    <a href="https://github.com/BrachoDB" target="_blank" class="btn btn-primary"
+                        style="background: transparent; border: 1px solid var(--accent-color); color: var(--accent-color);">
+                        <i class="fab fa-github"></i> Visita mi GitHub
+                    </a>
+                </div>
+                <div class="about-skills reveal">
+                    <h3>Tecnologías y Herramientas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag">HTML5</div>
+                        <div class="skill-tag">CSS3</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">PHP</div>
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">MySQL</div>
+                        <div class="skill-tag">Node.js</div>
+                        <div class="skill-tag">Express</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Flask</div>
+                        <div class="skill-tag">FastAPI</div>
+                        <div class="skill-tag">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="servicios" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <h2 class="section-title reveal">Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de páginas web modernas, responsivas y optimizadas para cualquier dispositivo.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-server"></i>
+                    <h3>Sistemas Personalizados</h3>
+                    <p>Desarrollo de sistemas a medida para gestión de datos, usuarios y procesos de negocio.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-database"></i>
+                    <h3>Bases de Datos</h3>
+                    <p>Implementación de formularios inteligentes conectados a bases de datos seguras y eficientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2 class="section-title reveal">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <!-- PROYECTO 1: SISTEMA DE PARQUEADERO -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="img/parqueadero.png" alt="Sistema de Parqueadero"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span> <span class="tag">Express</span> <span class="tag">MySQL</span> <span class="tag">JWT</span>
+                        </div>
+                        <h3>🧩 Sistema de Control de Parqueadero</h3>
+                        <p>Sistema web profesional para la gestión integral de parqueaderos, con automatización de cobros y monitoreo de ocupación en tiempo real.</p>
+                        
+                        <h4>Funcionalidades:</h4>
+                        <ul>
+                            <li>Gestión de categorías (Sedán, Camioneta, Motos)</li>
+                            <li>Control de capacidad (30 cupos autos / 15 motos)</li>
+                            <li>Tarifas dinámicas (por hora, minuto, fracción o día)</li>
+                            <li>Generación de tickets detallados de salida</li>
+                            <li>Roles de acceso (Administrador y Operario)</li>
+                        </ul>
+
+                        <div class="project-buttons">
+                            <a href="https://sistema-parqueadero-olive.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Ver página →</a>
+                            <a href="https://github.com/BrachoDB/sistema-parqueadero.git" target="_blank" class="btn btn-code">Ver repositorio →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 2: GESTIÓN DE CINE -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="img/cine.png" alt="Sistema de Cine"></div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">MySQL</span> <span class="tag">Mailjet</span>
+                        </div>
+                        <h3>🧩 Sistema de Gestión de Cine</h3>
+                        <p>Aplicación web diseñada para la administración de cartelera y la venta automatizada de tiquetes de cine, optimizando el proceso de reserva.</p>
+                        
+                        <h4>Funcionalidades:</h4>
+                        <ul>
+                            <li>Gestión dinámica de cartelera de películas</li>
+                            <li>Administración de funciones, salas y horarios</li>
+                            <li>Generación de códigos QR para entradas digitales</li>
+                            <li>Notificaciones por correo mediante Mailjet</li>
+                            <li>Sistema de venta y reserva de boletos</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="https://sistema-web-para-gesti-n-de-cine.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Ver página →</a>
+                            <a href="https://github.com/BrachoDB/Sistema-Web-para-Gesti-n-de-Cine-.git" target="_blank" class="btn btn-code">Ver repositorio →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img"><i class="fas fa-table"></i></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">PHP</span> <span class="tag">MySQL</span></div>
+                        <h3>Captura de Datos Web</h3>
+                        <p>Sistema eficiente para la captura y almacenamiento estructurado de información.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img"><i class="fas fa-rocket"></i></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Frontend</span> <span class="tag">Responsive</span>
+                        </div>
+                        <h3>Landing Page Profesional</h3>
+                        <p>Página de aterrizaje optimizada para la presentación de servicios y conversión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title reveal">Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Estoy disponible para nuevos proyectos
+                        y colaboraciones. ¡Hablemos!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>darwindavidbracho@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/BrachoDB</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Colombia</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Darwin Bracho. Todos los derechos reservados.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.5;">Diseñado para la Actividad Académica ADSO -
+                SENA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
