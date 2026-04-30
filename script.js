@@ -30,29 +30,4 @@ window.addEventListener("scroll", reveal);
 // Initial reveal on load
 window.addEventListener("load", reveal);
 
-// Simple Form Submission Handler (Visual feedback only)
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = contactForm.querySelector('button');
-        const originalText = btn.innerText;
-        
-        btn.innerText = 'Enviando...';
-        btn.disabled = true;
-        
-        // Simulate API call
-        setTimeout(() => {
-            btn.innerText = '¡Mensaje Enviado!';
-            btn.style.background = '#00e676';
-            contactForm.reset();
-            
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.background = '';
-                btn.disabled = false;
-                reveal(); // Re-trigger reveal check
-            }, 3000);
-        }, 1500);
-    });
-}
+// El manejo del formulario se realiza ahora de forma nativa a través de FormSubmit.co en el HTML.
