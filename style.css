@@ -277,10 +277,15 @@ nav .container {
     color: var(--text-secondary);
 }
 
+.about-skills h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.2rem;
 }
 
 .skill-tag {
