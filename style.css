@@ -285,17 +285,10 @@ nav .container {
 }
 
 .project-tags {
-    background: rgb(255 255 255 / 0%);
-    padding: 0.2rem 0.1rem;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 0.85rem;
-    border: 2px solid #5e4dff;
-    transition: var(--transition);
-/*hasta aqui llega lo que modifique*/
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .tag {
@@ -304,6 +297,16 @@ nav .container {
     font-weight: 700;
     color: var(--accent-color);
     letter-spacing: 1px;
+    background: rgba(124, 77, 255, 0.1);
+    border: 1px solid rgba(124, 77, 255, 0.4);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.tag:hover {
+    background: rgba(124, 77, 255, 0.2);
+    border-color: var(--accent-color);
 }
 
 .project-content h3 {
