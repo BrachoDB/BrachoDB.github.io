@@ -284,23 +284,58 @@ nav .container {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1.2rem;
+    align-items: start;
 }
 
 .skill-tag {
     background: var(--card-bg);
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 0.85rem;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
+    cursor: default;
+    overflow: hidden;
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.skill-info i {
+    font-size: 1.5rem;
+    min-width: 24px;
+}
+
+.skill-desc {
+    max-height: 0;
+    opacity: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 0;
+    line-height: 1.4;
 }
 
 .skill-tag:hover {
     border-color: var(--accent-color);
-    color: var(--accent-color);
+    background: rgba(124, 77, 255, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-tag:hover .skill-desc {
+    max-height: 80px;
+    opacity: 1;
+    margin-top: 0.8rem;
 }
 
 /* Services Section */
@@ -397,9 +432,16 @@ nav .container {
     letter-spacing: 1px;
     background: rgba(124, 77, 255, 0.1);
     border: 1px solid rgba(124, 77, 255, 0.4);
-    padding: 0.3rem 0.7rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag i {
+    font-size: 0.9rem;
 }
 
 .tag:hover {
