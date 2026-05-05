@@ -865,3 +865,53 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Notification Toast */
+.notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--card-bg);
+    border-left: 5px solid var(--success);
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    transform: translateX(120%);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 2000;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 5px solid var(--success);
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification i {
+    color: var(--success);
+    font-size: 1.8rem;
+}
+
+.notification-content h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.notification-content p {
+    margin: 0.2rem 0 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+    .notification {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        padding: 1rem 1.5rem;
+    }
+}

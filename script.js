@@ -30,4 +30,47 @@ window.addEventListener("scroll", reveal);
 // Initial reveal on load
 window.addEventListener("load", reveal);
 
-// El manejo del formulario se realiza ahora de forma nativa a través de FormSubmit.co en el HTML.
+// Manejo del formulario de contacto con AJAX
+const contactForm = document.querySelector('.contact-form');
+const notification = document.getElementById('notification');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerText;
+
+        // Deshabilitar botón y mostrar estado de carga
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then(response => {
+                if (response.ok) {
+                    // Mostrar notificación de éxito
+                    notification.classList.add('show');
+                    this.reset();
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 5000);
+                } else {
+                    alert('Hubo un error al enviar el mensaje. Por favor intenta de nuevo.');
+                }
+            })
+            .catch(error => {
+                alert('Error de conexión. Por favor verifica tu internet.');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+            });
+    });
+}
